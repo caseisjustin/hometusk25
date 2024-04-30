@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>CRUD</title>
+</head>
+
+<body>
+    <h1>USER DATA</h1>
+    <form action="" name="">
+        <label for="username">
+            <input class="fname" name="username" type="text" required placeholder="FIRST NAME">
+        </label>
+        <label for="userlname">
+            <input class="lname" name="userlname" type="text" required placeholder="LAST NAME">
+            <input class="id" type="text" placeholder="ID: enter if you want to edit">
+            <button onclick="db.addUser()">ADD</button>
+            <button onclick="db.updateUser()">EDIT</button>
+            <button onclick="db.deleteUser()">DELETE</button>
+        </label>
+        <label for="age">
+            <input class="age" name="age" type="text" required placeholder="AGE">
+        </label>
+    </form>
+    <p></p>
+</body>
+<script src="./database.js"></script>
+
+</html>
